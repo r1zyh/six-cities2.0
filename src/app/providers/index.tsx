@@ -1,5 +1,7 @@
+import { Main } from '../../pages/main/ui';
+
 function Providers() {
-  return <h1>Hello, World!</h1>;
+  return <Main />;
 }
 
 export default Providers;
