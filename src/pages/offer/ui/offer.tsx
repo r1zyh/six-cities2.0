@@ -1,9 +1,15 @@
-import { BookmarksBtn } from '../../../shared/ui/bookmarks-button/ui';
 import { Header } from '../../../widgets/header/ui';
 import { NearPlaces } from '../../../widgets/near-places/ui';
 import { OfferGalley } from '../../../widgets/offer-gallery/ui';
 import { OfferMap } from '../../../widgets/offer-map/ui';
 import { Reviews } from '../../../widgets/reviews/ui';
+import { OfferInside } from '../../../features/offer-inside/ui';
+import { OfferHost } from '../../../features/offer-host/ui';
+import { OfferName } from '../../../features/offer-name/ui';
+import { OfferFeatures } from '../../../features/offer-features/ui';
+import { OfferRating } from '../../../features/offer-rating/ui';
+import { OfferPrice } from '../../../features/offer-price/ui';
+import { OfferMark } from '../../../features/offer-mark/ui';
 
 export function Offer(): JSX.Element {
   return (
@@ -15,84 +21,17 @@ export function Offer(): JSX.Element {
           <OfferGalley />
           <div className="offer__container container">
             <div className="offer__wrapper">
-              <div className="offer__mark">
-                <span>Premium</span>
-              </div>
-              <div className="offer__name-wrapper">
-                <h1 className="offer__name">
-                  Beautiful &amp; luxurious studio at great location
-                </h1>
-                <BookmarksBtn width={'31'} height={'33'} type={'offer'}/>
-              </div>
-              <div className="offer__rating rating">
-                <div className="offer__stars rating__stars">
-                  <span style={{ width: '80%' }}></span>
-                  <span className="visually-hidden">Rating</span>
-                </div>
-                <span className="offer__rating-value rating__value">4.8</span>
-              </div>
-              <ul className="offer__features">
-                <li className="offer__feature offer__feature--entire">
-                  Apartment
-                </li>
-                <li className="offer__feature offer__feature--bedrooms">
-                  3 Bedrooms
-                </li>
-                <li className="offer__feature offer__feature--adults">
-                  Max 4 adults
-                </li>
-              </ul>
-              <div className="offer__price">
-                <b className="offer__price-value">&euro;120</b>
-                <span className="offer__price-text">&nbsp;night</span>
-              </div>
-              <div className="offer__inside">
-                <h2 className="offer__inside-title">What&apos;s inside</h2>
-                <ul className="offer__inside-list">
-                  <li className="offer__inside-item">Wi-Fi</li>
-                  <li className="offer__inside-item">Washing machine</li>
-                  <li className="offer__inside-item">Towels</li>
-                  <li className="offer__inside-item">Heating</li>
-                  <li className="offer__inside-item">Coffee machine</li>
-                  <li className="offer__inside-item">Baby seat</li>
-                  <li className="offer__inside-item">Kitchen</li>
-                  <li className="offer__inside-item">Dishwasher</li>
-                  <li className="offer__inside-item">Cabel TV</li>
-                  <li className="offer__inside-item">Fridge</li>
-                </ul>
-              </div>
-              <div className="offer__host">
-                <h2 className="offer__host-title">Meet the host</h2>
-                <div className="offer__host-user user">
-                  <div className="offer__avatar-wrapper offer__avatar-wrapper--pro user__avatar-wrapper">
-                    <img
-                      className="offer__avatar user__avatar"
-                      src="img/avatar-angelina.jpg"
-                      width="74"
-                      height="74"
-                      alt="Host avatar"
-                    />
-                  </div>
-                  <span className="offer__user-name">Angelina</span>
-                  <span className="offer__user-status">Pro</span>
-                </div>
-                <div className="offer__description">
-                  <p className="offer__text">
-                    A quiet cozy and picturesque that hides behind a a river by
-                    the unique lightness of Amsterdam. The building is green and
-                    from 18th century.
-                  </p>
-                  <p className="offer__text">
-                    An independent House, strategically located between Rembrand
-                    Square and National Opera, but where the bustle of the city
-                    comes to rest in this alley flowery and colorful.
-                  </p>
-                </div>
-              </div>
+              <OfferMark />
+              <OfferName />
+              <OfferRating />
+              <OfferFeatures />
+              <OfferPrice />
+              <OfferInside />
+              <OfferHost />
               <Reviews />
             </div>
           </div>
-          <OfferMap/>
+          <OfferMap />
         </section>
         <NearPlaces />
       </main>
