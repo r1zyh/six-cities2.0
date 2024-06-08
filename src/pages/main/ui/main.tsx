@@ -3,7 +3,7 @@ import { Cities } from '../../../widgets/cities/ui';
 import { CitiesSelector } from '../../../features/cities-selector/ui';
 
 
-export default function Main(): JSX.Element {
+export function Main(): JSX.Element {
   return (
     <div className="page page--gray page--main">
       <Header />
