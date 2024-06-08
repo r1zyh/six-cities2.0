@@ -1,5 +1,5 @@
 import { OfferCard } from '../../../entities/offer-card/ui';
-import { CitiesMap } from '../../../features/cities-map/ui';
+import { CitiesMap } from '../../cities-map/ui';
 import { OfferSort } from '../../../features/offer-sort/ui';
 
 export function Cities(): JSX.Element {

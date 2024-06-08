@@ -1,3 +1,5 @@
+import { BookmarksBtn } from '../../../shared/ui/bookmarks-button/ui';
+
 export function OfferCard(): JSX.Element {
   return (
     <article className="cities__card place-card">
@@ -21,12 +23,7 @@ export function OfferCard(): JSX.Element {
             <b className="place-card__price-value">&euro;180</b>
             <span className="place-card__price-text">&#47;&nbsp;night</span>
           </div>
-          <button className="place-card__bookmark-button button" type="button">
-            <svg className="place-card__bookmark-icon" width="18" height="19">
-              <use xlinkHref="#icon-bookmark"></use>
-            </svg>
-            <span className="visually-hidden">To bookmarks</span>
-          </button>
+          <BookmarksBtn width={'18'} height={'19'} type={'place-card'} />
         </div>
         <div className="place-card__rating rating">
           <div className="place-card__stars rating__stars">

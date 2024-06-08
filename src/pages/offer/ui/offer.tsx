@@ -1,6 +1,8 @@
+import { BookmarksBtn } from '../../../shared/ui/bookmarks-button/ui';
 import { Header } from '../../../widgets/header/ui';
 import { NearPlaces } from '../../../widgets/near-places/ui';
 import { OfferGalley } from '../../../widgets/offer-gallery/ui';
+import { OfferMap } from '../../../widgets/offer-map/ui';
 import { Reviews } from '../../../widgets/reviews/ui';
 
 export function Offer(): JSX.Element {
@@ -20,12 +22,7 @@ export function Offer(): JSX.Element {
                 <h1 className="offer__name">
                   Beautiful &amp; luxurious studio at great location
                 </h1>
-                <button className="offer__bookmark-button button" type="button">
-                  <svg className="offer__bookmark-icon" width="31" height="33">
-                    <use xlinkHref="#icon-bookmark"></use>
-                  </svg>
-                  <span className="visually-hidden">To bookmarks</span>
-                </button>
+                <BookmarksBtn width={'31'} height={'33'} type={'offer'}/>
               </div>
               <div className="offer__rating rating">
                 <div className="offer__stars rating__stars">
@@ -95,7 +92,7 @@ export function Offer(): JSX.Element {
               <Reviews />
             </div>
           </div>
-          <section className="offer__map map"></section>
+          <OfferMap/>
         </section>
         <NearPlaces />
       </main>
