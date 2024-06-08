@@ -2,10 +2,6 @@ import { Header } from '../../../widgets/header/ui';
 import { Cities } from '../../../widgets/cities/ui';
 import { CitiesSelector } from '../../../features/cities-selector/ui';
 
-/*
-Подумать над тем, правильно-ли были отнесены текущие части Main к widgets и features
-Возможно стоит вынести группирующие элементы в widgets
-*/
 
 export default function Main(): JSX.Element {
   return (

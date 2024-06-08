@@ -1,11 +1,11 @@
 import { BookmarksBtn } from '../../../shared/ui/bookmarks-button/ui';
+import { placeCardType } from '../../../shared/ui/mark/const';
+import { Mark } from '../../../shared/ui/mark/ui';
 
 export function OfferCard(): JSX.Element {
   return (
     <article className="cities__card place-card">
-      <div className="place-card__mark">
-        <span>Premium</span>
-      </div>
+      <Mark type={placeCardType} />
       <div className="cities__image-wrapper place-card__image-wrapper">
         <a href="#">
           <img
