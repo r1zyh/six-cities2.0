@@ -6,7 +6,7 @@ import { OfferInside } from '../../offer-inside/ui';
 import { OfferName } from '../../offer-name/ui';
 import { OfferPrice } from '../../offer-price/ui';
 import { OfferRating } from '../../offer-rating/ui';
-import { offerType } from '../../../../../shared/ui/mark/const';
+import { offerType } from '../../../../../shared/const';
 
 export function OfferDetails(): JSX.Element {
   return (

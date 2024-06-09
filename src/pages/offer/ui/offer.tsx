@@ -1,4 +1,5 @@
-import { OfferDetails } from '../../../features/offer-details/ui/offer-details/ui';
+
+import { OfferDetails } from '../../../features/offer-details/ui';
 import { Header } from '../../../widgets/header/ui';
 import { NearPlaces } from '../../../widgets/near-places/ui';
 import { OfferGalley } from '../../../widgets/offer-gallery/ui';
