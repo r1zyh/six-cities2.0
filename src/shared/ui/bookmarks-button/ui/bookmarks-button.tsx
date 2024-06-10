@@ -1,25 +1,18 @@
 import classNames from 'classnames';
 
 type TBookmarks = {
-  width: string;
-  height: string;
+  width: number;
+  height: number;
   type: string;
 };
 
-
-export function BookmarksBtn({
-  width,
-  height,
-  type,
-}: TBookmarks): JSX.Element {
+export function BookmarksBtn({ width, height, type }: TBookmarks): JSX.Element {
   return (
     <button
-      className={classNames(
-        {
-          'place-card__bookmark-button button': type === 'place-card',
-          'offer__bookmark-button button': type === 'offer',
-        },
-      )}
+      className={classNames({
+        'place-card__bookmark-button button': type === 'place-card',
+        'offer__bookmark-button button': type === 'offer',
+      })}
       type="button"
     >
       <svg
