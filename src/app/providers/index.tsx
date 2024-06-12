@@ -10,6 +10,7 @@ import { Offer } from '../../pages/offer/ui';
 Подумать над названием offer-card в entities
 Добавить алиасы для импортов
 Стоит вынести location в favorite и login в shared, возможно и из других компонентов где есть location
+BookmarksBtn стоит переделать на условный рендериг как с price и rating т.к в будущем будет использоваться classnames для определения класса isFavorite
 */
 
 function Providers() {
