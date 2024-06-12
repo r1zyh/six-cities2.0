@@ -1,6 +1,7 @@
-import { OfferCard } from '../../../entities/offer-card/ui';
+import { PlaceCard } from '../../../entities/place-card/ui';
 import { CitiesMap } from '../../cities-map/ui';
 import { OfferSort } from '../../../features/offer-sort/ui';
+import { placeCardType } from '../../../shared/const';
 
 export function Cities(): JSX.Element {
   return (
@@ -11,11 +12,11 @@ export function Cities(): JSX.Element {
           <b className="places__found">312 places to stay in Amsterdam</b>
           <OfferSort />
           <div className="cities__places-list places__list tabs__content">
-            <OfferCard />
-            <OfferCard />
-            <OfferCard />
-            <OfferCard />
-            <OfferCard />
+            <PlaceCard type={placeCardType} />
+            <PlaceCard type={placeCardType} />
+            <PlaceCard type={placeCardType} />
+            <PlaceCard type={placeCardType} />
+            <PlaceCard type={placeCardType} />
           </div>
         </section>
         <div className="cities__right-section">

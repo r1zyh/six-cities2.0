@@ -1,4 +1,4 @@
-export function OfferCardInfo(): JSX.Element {
+export function PlaceCardInfo(): JSX.Element {
   return (
     <>
       <h2 className="place-card__name">

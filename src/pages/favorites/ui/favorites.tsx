@@ -1,15 +1,6 @@
-import { OfferCardInfo } from '../../../entities/offer-card/ui';
 import { Header } from '../../../widgets/header/ui';
-import { CardRating } from '../../../shared/ui/card-rating/ui';
-import { placeCardType } from '../../../shared/const';
-import { CardPrice } from '../../../shared/ui/card-price/ui';
-import { BookmarksBtn } from '../../../shared/ui/bookmarks-button/ui';
-import {
-  placeCardHeight,
-  placeCardWidth,
-} from '../../../shared/ui/bookmarks-button/const';
-import { CardImage } from '../../../shared/ui/card-image/ui';
 import { Footer } from '../../../widgets/footer/ui';
+import { PlaceCard } from '../../../entities/place-card/ui';
 
 export function Favorites(): JSX.Element {
   return (
@@ -30,37 +21,9 @@ export function Favorites(): JSX.Element {
                   </div>
                 </div>
                 <div className="favorites__places">
-                  <article className="favorites__card place-card">
-                    <CardImage />
-                    <div className="favorites__card-info place-card__info">
-                      <div className="place-card__price-wrapper">
-                        <CardPrice type={placeCardType} />
-                        <BookmarksBtn
-                          width={placeCardWidth}
-                          height={placeCardHeight}
-                          type={placeCardType}
-                        />
-                      </div>
-                      <CardRating type={placeCardType} />
-                      <OfferCardInfo />
-                    </div>
-                  </article>
+                  <PlaceCard />
 
-                  <article className="favorites__card place-card">
-                    <CardImage />
-                    <div className="favorites__card-info place-card__info">
-                      <div className="place-card__price-wrapper">
-                        <CardPrice type={placeCardType} />
-                        <BookmarksBtn
-                          width={placeCardWidth}
-                          height={placeCardHeight}
-                          type={placeCardType}
-                        />
-                      </div>
-                      <CardRating type={placeCardType} />
-                      <OfferCardInfo />
-                    </div>
-                  </article>
+                  <PlaceCard />
                 </div>
               </li>
 
@@ -73,21 +36,7 @@ export function Favorites(): JSX.Element {
                   </div>
                 </div>
                 <div className="favorites__places">
-                  <article className="favorites__card place-card">
-                    <CardImage />
-                    <div className="favorites__card-info place-card__info">
-                      <div className="place-card__price-wrapper">
-                        <CardPrice type={placeCardType} />
-                        <BookmarksBtn
-                          width={placeCardWidth}
-                          height={placeCardHeight}
-                          type={placeCardType}
-                        />
-                      </div>
-                      <CardRating type={placeCardType} />
-                      <OfferCardInfo />
-                    </div>
-                  </article>
+                  <PlaceCard />
                 </div>
               </li>
             </ul>

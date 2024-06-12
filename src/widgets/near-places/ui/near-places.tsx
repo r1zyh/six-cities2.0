@@ -1,4 +1,5 @@
-import { OfferCard } from '../../../entities/offer-card/ui';
+import { PlaceCard } from '../../../entities/place-card/ui';
+import { placeCardType } from '../../../shared/const';
 
 export function NearPlaces(): JSX.Element {
   return (
@@ -8,11 +9,9 @@ export function NearPlaces(): JSX.Element {
           Other places in the neighbourhood
         </h2>
         <div className="near-places__list places__list">
-          <OfferCard />
-
-          <OfferCard />
-
-          <OfferCard />
+          <PlaceCard type={placeCardType} />
+          <PlaceCard type={placeCardType} />
+          <PlaceCard type={placeCardType} />
         </div>
       </section>
     </div>
