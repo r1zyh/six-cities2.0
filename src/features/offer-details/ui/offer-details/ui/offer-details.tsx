@@ -1,5 +1,4 @@
 import { Mark } from '../../../../../shared/ui/mark/ui';
-import { Reviews } from '../../../../../widgets/reviews/ui';
 import { OfferFeatures } from '../../offer-features/ui';
 import { OfferHost } from '../../offer-host/ui';
 import { OfferInside } from '../../offer-inside/ui';
@@ -7,6 +6,7 @@ import { OfferName } from '../../offer-name/ui';
 import { OfferPrice } from '../../offer-price/ui';
 import { OfferRating } from '../../offer-rating/ui';
 import { offerType } from '../../../../../shared/const';
+import { Reviews } from '../../../../../widgets/reviews/ui';
 
 export function OfferDetails(): JSX.Element {
   return (
