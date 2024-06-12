@@ -1,7 +1,7 @@
-import { PlaceCard } from '../../../entities/place-card/ui';
+import { PlaceCard } from '@entities/place-card/ui';
 import { CitiesMap } from '../../cities-map/ui';
-import { OfferSort } from '../../../features/offer-sort/ui';
-import { placeCardType } from '../../../shared/const';
+import { OfferSort } from '@features/offer-sort/ui';
+import { placeCardType } from '@shared/const';
 
 export function Cities(): JSX.Element {
   return (

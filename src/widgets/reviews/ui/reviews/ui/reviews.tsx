@@ -1,4 +1,4 @@
-import { ReviewForm } from '../../../../../features/review-form/ui';
+import { ReviewForm } from '@features/review-form/ui';
 import { ReviewList } from '../../review-list/ui';
 
 export function Reviews(): JSX.Element {

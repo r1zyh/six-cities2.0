@@ -1,6 +1,6 @@
-import { Header } from '../../../widgets/header/ui';
-import { LoginForm } from '../../../features/login-form/ui';
-import { Location } from '../../../shared/ui/location/ui';
+import { Header } from '@widgets/header/ui';
+import { LoginForm } from '@features/login-form/ui';
+import { Location } from '@shared/ui/location/ui';
 
 export function Login(): JSX.Element {
   return (

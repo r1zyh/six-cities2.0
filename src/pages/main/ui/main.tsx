@@ -1,7 +1,6 @@
-import { Header } from '../../../widgets/header/ui';
-import { Cities } from '../../../widgets/cities/ui';
-import { CitiesSelector } from '../../../features/cities-selector/ui';
-
+import { Header } from '@widgets/header/ui';
+import { Cities } from '@widgets/cities/ui';
+import { CitiesSelector } from '@features/cities-selector/ui';
 
 export function Main(): JSX.Element {
   return (
@@ -10,7 +9,7 @@ export function Main(): JSX.Element {
 
       <main className="page__main page__main--index">
         <h1 className="visually-hidden">Cities</h1>
-        <CitiesSelector/>
+        <CitiesSelector />
         <Cities />
       </main>
     </div>

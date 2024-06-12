@@ -1,14 +1,11 @@
-import { BookmarksBtn } from '../../../../../shared/ui/bookmarks-button/ui';
-import { placeCardType } from '../../../../../shared/const';
-import { Mark } from '../../../../../shared/ui/mark/ui';
-import { CardPrice } from '../../../../../shared/ui/card-price/ui';
-import { CardRating } from '../../../../../shared/ui/card-rating/ui';
-import {
-  placeCardWidth,
-  placeCardHeight,
-} from '../../../../../shared/ui/bookmarks-button/const';
-import { CardImage } from '../../../../../shared/ui/card-image/ui';
+import { BookmarksBtn } from '@shared/ui/bookmarks-button/ui';
+import { Mark } from '@shared/ui/mark/ui';
+import { CardPrice } from '@shared/ui/card-price/ui';
+import { CardRating } from '@shared/ui/card-rating/ui';
+import { CardImage } from '@shared/ui/card-image/ui';
 import { PlaceCardInfo } from '../../place-card-info/ui';
+import { placeCardType } from '@shared/const';
+import { placeCardHeight, placeCardWidth } from '@shared/ui/bookmarks-button/const';
 
 
 type TPlaceCard = {

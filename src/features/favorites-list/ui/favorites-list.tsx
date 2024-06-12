@@ -1,6 +1,6 @@
-import { favoriteType } from '../../../shared/const';
-import { Location } from '../../../shared/ui/location/ui';
-import { PlaceCard } from '../../../entities/place-card/ui';
+import { favoriteType } from '@shared/const';
+import { Location } from '@shared/ui/location/ui';
+import { PlaceCard } from '@entities/place-card/ui';
 
 export function FavoritesList(): JSX.Element {
   return (

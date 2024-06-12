@@ -1,6 +1,6 @@
-import { Header } from '../../../widgets/header/ui';
-import { Footer } from '../../../widgets/footer/ui';
-import { FavoritesList } from '../../../features/favorites-list/ui';
+import { Header } from '@widgets/header/ui';
+import { Footer } from '@widgets/footer/ui';
+import { FavoritesList } from '@features/favorites-list/ui';
 
 export function Favorites(): JSX.Element {
   return (

@@ -1,9 +1,9 @@
-import { BookmarksBtn } from '../../../../../shared/ui/bookmarks-button/ui';
+import { BookmarksBtn } from '@shared/ui/bookmarks-button/ui';
 import {
   offerCardWidth,
   offerCardHeight,
-} from '../../../../../shared/ui/bookmarks-button/const';
-import { offerType } from '../../../../../shared/const';
+} from '@shared/ui/bookmarks-button/const';
+import { offerType } from '@shared/const';
 
 export function OfferName(): JSX.Element {
   return (

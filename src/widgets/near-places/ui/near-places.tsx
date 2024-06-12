@@ -1,5 +1,5 @@
-import { PlaceCard } from '../../../entities/place-card/ui';
-import { placeCardType } from '../../../shared/const';
+import { PlaceCard } from '@entities/place-card/ui';
+import { placeCardType } from '@shared/const';
 
 export function NearPlaces(): JSX.Element {
   return (
