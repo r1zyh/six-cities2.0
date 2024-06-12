@@ -1,6 +1,6 @@
 import { Header } from '../../../widgets/header/ui';
 import { LoginForm } from '../../../features/login-form/ui';
-import { LoginLocation } from '../../../features/login-location/ui';
+import { Location } from '../../../shared/ui/location/ui';
 
 export function Login(): JSX.Element {
   return (
@@ -10,7 +10,7 @@ export function Login(): JSX.Element {
       <main className="page__main page__main--login">
         <div className="page__login-container container">
           <LoginForm />
-          <LoginLocation />
+          <Location/>
         </div>
       </main>
     </div>

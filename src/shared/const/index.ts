@@ -1,1 +1,1 @@
-export { offerType, placeCardType } from './const';
+export { offerType, placeCardType, favoriteType } from './const';

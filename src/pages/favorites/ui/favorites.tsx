@@ -1,6 +1,8 @@
 import { Header } from '../../../widgets/header/ui';
 import { Footer } from '../../../widgets/footer/ui';
 import { PlaceCard } from '../../../entities/place-card/ui';
+import { Location } from '../../../shared/ui/location/ui';
+import { favoriteType } from '../../../shared/const';
 
 export function Favorites(): JSX.Element {
   return (
@@ -13,13 +15,7 @@ export function Favorites(): JSX.Element {
             <h1 className="favorites__title">Saved listing</h1>
             <ul className="favorites__list">
               <li className="favorites__locations-items">
-                <div className="favorites__locations locations locations--current">
-                  <div className="locations__item">
-                    <a className="locations__item-link" href="#">
-                      <span>Amsterdam</span>
-                    </a>
-                  </div>
-                </div>
+                <Location type={favoriteType} />
                 <div className="favorites__places">
                   <PlaceCard />
 
@@ -28,13 +24,7 @@ export function Favorites(): JSX.Element {
               </li>
 
               <li className="favorites__locations-items">
-                <div className="favorites__locations locations locations--current">
-                  <div className="locations__item">
-                    <a className="locations__item-link" href="#">
-                      <span>Cologne</span>
-                    </a>
-                  </div>
-                </div>
+                <Location type={favoriteType} />
                 <div className="favorites__places">
                   <PlaceCard />
                 </div>
