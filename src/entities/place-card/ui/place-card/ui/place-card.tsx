@@ -5,7 +5,6 @@ import { CardRating } from '@shared/ui/card-rating/ui';
 import { CardImage } from '@shared/ui/card-image/ui';
 import { PlaceCardInfo } from '../../place-card-info/ui';
 import { placeCardType } from '@shared/const';
-import { placeCardHeight, placeCardWidth } from '@shared/ui/bookmarks-button/const';
 
 
 type TPlaceCard = {
@@ -21,8 +20,6 @@ export function PlaceCard({ type }: TPlaceCard): JSX.Element {
         <div className="place-card__price-wrapper">
           <CardPrice type={placeCardType} />
           <BookmarksBtn
-            width={placeCardWidth}
-            height={placeCardHeight}
             type={placeCardType}
           />
         </div>
@@ -37,8 +34,6 @@ export function PlaceCard({ type }: TPlaceCard): JSX.Element {
         <div className="place-card__price-wrapper">
           <CardPrice type={placeCardType} />
           <BookmarksBtn
-            width={placeCardWidth}
-            height={placeCardHeight}
             type={placeCardType}
           />
         </div>

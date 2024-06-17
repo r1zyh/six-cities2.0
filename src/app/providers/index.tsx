@@ -10,6 +10,7 @@ import { Offer } from '@pages/offer/ui';
 Подумать над названием offer-card в entities
 Добавить алиасы для импортов
 BookmarksBtn стоит переделать на условный рендеринг как с price и rating т.к в будущем будет использоваться classnames для определения класса isFavorite
+Убрать временные переменные из card-rating и mark
 */
 
 function Providers() {

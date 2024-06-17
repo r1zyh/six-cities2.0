@@ -1,27 +1,32 @@
-import classNames from 'classnames';
+import {
+  placeCardWidth,
+  placeCardHeight,
+  offerCardWidth,
+  offerCardHeight,
+} from '../const';
 
 type TBookmarks = {
-  width: number;
-  height: number;
   type: string;
 };
 
-export function BookmarksBtn({ width, height, type }: TBookmarks): JSX.Element {
-  return (
-    <button
-      className={classNames({
-        'place-card__bookmark-button button': type === 'place-card',
-        'offer__bookmark-button button': type === 'offer',
-      })}
-      type="button"
-    >
+export function BookmarksBtn({ type }: TBookmarks): JSX.Element {
+  return type === 'place-card' ? (
+    <button className="place-card__bookmark-button button" type="button">
       <svg
-        className={classNames({
-          'place-card__bookmark-icon': type === 'place-card',
-          'offer__bookmark-icon': type === 'offer',
-        })}
-        width={width}
-        height={height}
+        className="place-card__bookmark-icon"
+        width={placeCardWidth}
+        height={placeCardHeight}
+      >
+        <use xlinkHref="#icon-bookmark"></use>
+      </svg>
+      <span className="visually-hidden">To bookmarks</span>
+    </button>
+  ) : (
+    <button className="offer__bookmark-button button" type="button">
+      <svg
+        className="offer__bookmark-icon"
+        width={offerCardWidth}
+        height={offerCardHeight}
       >
         <use xlinkHref="#icon-bookmark"></use>
       </svg>

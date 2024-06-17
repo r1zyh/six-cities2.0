@@ -4,7 +4,12 @@ type TMark = {
   type: string;
 };
 
-export function Mark({ type }: TMark): JSX.Element {
+export function Mark({ type }: TMark): JSX.Element | null {
+  const isPremium = true;
+  if (!isPremium) {
+    return null;
+  }
+
   return (
     <div
       className={classNames({

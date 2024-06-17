@@ -1,6 +1,23 @@
+import { SORT_TYPES } from './const';
+import { useState } from 'react';
+import classNames from 'classnames';
+import { MouseEvent } from 'react';
+
 export function OfferSort(): JSX.Element {
+  const [isOpened, setIsOpened] = useState(false);
+
+  const handleSortClick = (e: MouseEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsOpened((prevIsOpened) => !prevIsOpened);
+  };
+
   return (
-    <form className="places__sorting" action="#" method="get">
+    <form
+      className="places__sorting"
+      action="#"
+      method="get"
+      onClick={handleSortClick}
+    >
       <span className="places__sorting-caption">Sort by</span>
       <span className="places__sorting-type" tabIndex={0}>
         Popular
@@ -8,19 +25,22 @@ export function OfferSort(): JSX.Element {
           <use xlinkHref="#icon-arrow-select"></use>
         </svg>
       </span>
-      <ul className="places__options places__options--custom places__options--opened">
-        <li className="places__option places__option--active" tabIndex={0}>
-          Popular
-        </li>
-        <li className="places__option" tabIndex={0}>
-          Price: low to high
-        </li>
-        <li className="places__option" tabIndex={0}>
-          Price: high to low
-        </li>
-        <li className="places__option" tabIndex={0}>
-          Top rated first
-        </li>
+      <ul
+        className={classNames({
+          'places__options places__options--custom places__options--opened':
+            isOpened,
+          'places__options places__options--custom': !isOpened,
+        })}
+      >
+        {SORT_TYPES.map((type) => (
+          <li
+            className="places__option places__option--active"
+            tabIndex={0}
+            key={type}
+          >
+            {type}
+          </li>
+        ))}
       </ul>
     </form>
   );
