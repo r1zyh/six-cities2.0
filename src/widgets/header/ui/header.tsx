@@ -1,3 +1,5 @@
+import { offers } from '@shared/ui/mocks/ui';
+
 export function Header(): JSX.Element {
   return (
     <header className="header">
@@ -25,7 +27,9 @@ export function Header(): JSX.Element {
                   <span className="header__user-name user__name">
                     Oliver.conner@gmail.com
                   </span>
-                  <span className="header__favorite-count">3</span>
+                  <span className="header__favorite-count">
+                    {offers.length}
+                  </span>
                 </a>
               </li>
               <li className="header__nav-item">

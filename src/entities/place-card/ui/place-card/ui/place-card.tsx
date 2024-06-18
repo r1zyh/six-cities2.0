@@ -5,40 +5,40 @@ import { CardRating } from '@shared/ui/card-rating/ui';
 import { CardImage } from '@shared/ui/card-image/ui';
 import { PlaceCardInfo } from '../../place-card-info/ui';
 import { placeCardType } from '@shared/const';
-
+import { TOffer } from '@shared/ui/mocks/type';
 
 type TPlaceCard = {
-  type?: string;
+  cardType?: string;
+  offer: TOffer;
 };
 
-export function PlaceCard({ type }: TPlaceCard): JSX.Element {
-  return type === placeCardType ? (
-    <article className="cities__card place-card">
-      <Mark type={placeCardType} />
-      <CardImage type={placeCardType} />
+export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
+  const { id, price, previewImage, rating, title, type, isPremium } = offer;
+
+  return cardType === placeCardType ? (
+    <article className="cities__card place-card" id={id}>
+      <Mark type={placeCardType} isPremium={isPremium} />
+      <CardImage type={placeCardType} previewImage={previewImage} />
       <div className="place-card__info">
         <div className="place-card__price-wrapper">
-          <CardPrice type={placeCardType} />
-          <BookmarksBtn
-            type={placeCardType}
-          />
+          <CardPrice type={placeCardType} price={price} />
+          <BookmarksBtn type={placeCardType} />
         </div>
-        <CardRating type={placeCardType} />
-        <PlaceCardInfo />
+        <CardRating type={placeCardType} rating={rating} />
+        <PlaceCardInfo title={title} type={type} />
       </div>
     </article>
   ) : (
-    <article className="favorites__card place-card">
-      <CardImage />
+    <article className="favorites__card place-card" id={id}>
+      <Mark type={placeCardType} isPremium={isPremium} />
+      <CardImage previewImage={previewImage} />
       <div className="favorites__card-info place-card__info">
         <div className="place-card__price-wrapper">
-          <CardPrice type={placeCardType} />
-          <BookmarksBtn
-            type={placeCardType}
-          />
+          <CardPrice type={placeCardType} price={price} />
+          <BookmarksBtn type={placeCardType} />
         </div>
-        <CardRating type={placeCardType} />
-        <PlaceCardInfo />
+        <CardRating type={placeCardType} rating={rating} />
+        <PlaceCardInfo title={title} type={type} />
       </div>
     </article>
   );

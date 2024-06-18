@@ -1,10 +1,15 @@
-export function PlaceCardInfo(): JSX.Element {
+type TPlaceCardInfo = {
+  title: string;
+  type: string;
+};
+
+export function PlaceCardInfo({ title, type }: TPlaceCardInfo): JSX.Element {
   return (
     <>
       <h2 className="place-card__name">
-        <a href="#">Nice, cozy, warm big bed apartment</a>
+        <a href="#">{title}</a>
       </h2>
-      <p className="place-card__type">Apartment</p>
+      <p className="place-card__type">{type}</p>
     </>
   );
 }

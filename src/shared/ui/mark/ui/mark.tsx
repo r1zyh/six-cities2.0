@@ -2,10 +2,10 @@ import classNames from 'classnames';
 
 type TMark = {
   type: string;
+  isPremium: boolean;
 };
 
-export function Mark({ type }: TMark): JSX.Element | null {
-  const isPremium = true;
+export function Mark({ type, isPremium }: TMark): JSX.Element | null {
   if (!isPremium) {
     return null;
   }
