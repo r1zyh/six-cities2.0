@@ -13,7 +13,8 @@ type TPlaceCard = {
 };
 
 export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
-  const { id, price, previewImage, rating, title, type, isPremium } = offer;
+
+  const { id, title, price, type, rating, isPremium, previewImage, } = offer;
 
   return cardType === placeCardType ? (
     <article className="cities__card place-card" id={id}>

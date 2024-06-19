@@ -14,7 +14,11 @@ export function Cities(): JSX.Element {
           <OfferSort />
           <div className="cities__places-list places__list tabs__content">
             {offers.map((offer) => (
-              <PlaceCard cardType={placeCardType} offer={offer} key={offer.id} />
+              <PlaceCard
+                cardType={placeCardType}
+                offer={offer}
+                key={offer.id}
+              />
             ))}
           </div>
         </section>

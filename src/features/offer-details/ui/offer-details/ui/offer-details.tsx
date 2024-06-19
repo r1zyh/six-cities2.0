@@ -9,10 +9,11 @@ import { offerType } from '@shared/const';
 import { Reviews } from '@widgets/reviews/ui';
 
 export function OfferDetails(): JSX.Element {
+  const isPremium = true;
   return (
     <div className="offer__container container">
       <div className="offer__wrapper">
-        <Mark type={offerType} />
+        <Mark type={offerType} isPremium={isPremium} />
         <OfferName />
         <OfferRating />
         <OfferFeatures />

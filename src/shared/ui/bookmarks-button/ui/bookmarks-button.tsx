@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { MouseEvent } from 'react';
+import classNames from 'classnames';
 import {
   placeCardWidth,
   placeCardHeight,
@@ -10,8 +13,23 @@ type TBookmarks = {
 };
 
 export function BookmarksBtn({ type }: TBookmarks): JSX.Element {
+  const [isFav, setIsFav] = useState(false);
+
+  const handleFavClick = (e: MouseEvent) => {
+    e.preventDefault();
+    setIsFav((prev) => !prev);
+  };
+
   return type === 'place-card' ? (
-    <button className="place-card__bookmark-button button" type="button">
+    <button
+      className={classNames({
+        'place-card__bookmark-button button': !isFav,
+        'place-card__bookmark-button place-card__bookmark-button--active button':
+          isFav,
+      })}
+      type="button"
+      onClick={handleFavClick}
+    >
       <svg
         className="place-card__bookmark-icon"
         width={placeCardWidth}
@@ -22,7 +40,14 @@ export function BookmarksBtn({ type }: TBookmarks): JSX.Element {
       <span className="visually-hidden">To bookmarks</span>
     </button>
   ) : (
-    <button className="offer__bookmark-button button" type="button">
+    <button
+      className={classNames({
+        'offer__bookmark-button button': !isFav,
+        'offer__bookmark-button--active offer__bookmark-button button': isFav,
+      })}
+      type="button"
+      onClick={handleFavClick}
+    >
       <svg
         className="offer__bookmark-icon"
         width={offerCardWidth}

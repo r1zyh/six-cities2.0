@@ -1,5 +1,6 @@
 import { PlaceCard } from '@entities/place-card/ui';
 import { placeCardType } from '@shared/const';
+import { offers } from '@shared/ui/mocks/ui';
 
 export function NearPlaces(): JSX.Element {
   return (
@@ -9,9 +10,9 @@ export function NearPlaces(): JSX.Element {
           Other places in the neighbourhood
         </h2>
         <div className="near-places__list places__list">
-          <PlaceCard type={placeCardType} />
-          <PlaceCard type={placeCardType} />
-          <PlaceCard type={placeCardType} />
+          {offers.map((offer) => (
+            <PlaceCard cardType={placeCardType} offer={offer} key={offer.id} />
+          ))}
         </div>
       </section>
     </div>
