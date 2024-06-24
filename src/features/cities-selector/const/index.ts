@@ -1,1 +1,1 @@
-export { CITY_NAMES } from './const';
+export * from './const';

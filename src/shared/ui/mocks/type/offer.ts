@@ -2,7 +2,7 @@ import { OfferTypes } from '@shared/const';
 
 type TOfferType = (typeof OfferTypes)[keyof typeof OfferTypes];
 
-type TCity = {
+export type TCity = {
   name: string;
   location: TLocation;
 };
@@ -11,6 +11,12 @@ type TLocation = {
   latitude: number;
   longitude: number;
   zoom: number;
+};
+
+type THost = {
+  name: string;
+  avatarUrl: string;
+  isPro: boolean;
 };
 
 export type TOffer = {
@@ -24,4 +30,22 @@ export type TOffer = {
   isPremium: boolean;
   rating: number;
   previewImage: string;
+};
+
+export type TDetailedOffer = {
+  id: string;
+  title: string;
+  type: string;
+  price: number;
+  city: TCity;
+  location: TLocation;
+  isFavorite: boolean;
+  isPremium: boolean;
+  rating: number;
+  description: string;
+  bedrooms: number;
+  goods: string[];
+  host: THost;
+  images: string[];
+  maxAdults: number;
 };

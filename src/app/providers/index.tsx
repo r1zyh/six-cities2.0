@@ -9,6 +9,7 @@ import { Offer } from '@pages/offer/ui';
 В будущем лучше вынести обертки из компонентов.
 Подумать над названием offer-card в entities
 Убрать временные переменные из offer-details, offer-price и offer-rating
+не забыть про const в cities-selector
 */
 
 function Providers() {
