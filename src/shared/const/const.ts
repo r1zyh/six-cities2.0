@@ -10,7 +10,7 @@ export enum OfferTypes {
 }
 
 export const NameSpace = {
-  Comments: 'COMMENTS',
+  Reviews: 'REVIEWS',
   NearbyOffers: 'NEARBY_OFFERS',
   Offers: 'OFFERS',
   User: 'USER',
