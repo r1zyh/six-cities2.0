@@ -4,9 +4,29 @@ export const offerType = 'offer';
 export const placeCardType = 'place-card' as string; // найти зачем было приведение типа
 export const favoriteType = 'favorite';
 
+export enum AppRoute {
+  Main = '/',
+  Login = '/login',
+  Favorites = '/favorites',
+  Offer = '/offer',
+}
+
+export enum APIRoute {
+  Offers = '/offers',
+  Comments = '/comments',
+  Login = '/login',
+  Logout = '/logout',
+  Favorites = '/favorite',
+}
+
 export enum OfferTypes {
   PrivateRoom = 'private room',
   Apartment = 'apartment',
+}
+
+export enum AuthorizationStatus {
+  Auth = 'Auth',
+  NoAuth = 'NoAuth',
 }
 
 export const NameSpace = {

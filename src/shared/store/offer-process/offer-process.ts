@@ -79,3 +79,18 @@ export const offersProcessSlice = createSlice({
     },
   },
 });
+
+export const {
+  setCitySelect,
+  setActiveId,
+  setPlacesSortType,
+  setOffers,
+  setDetailedOffer,
+  setOffersLoadingStatus,
+  removeFavoriteOffers,
+  addFavoriteOffers,
+  setFavoriteOffers,
+  setFavoriteOffersLoadingStatus,
+  updateDetailedOfferStatus,
+  updateOffers,
+} = offersProcessSlice.actions;

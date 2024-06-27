@@ -1,5 +1,5 @@
+import { CITY_NAMES } from '@shared/const';
 import classNames from 'classnames';
-import { CITY_NAMES } from '../const';
 import { useState } from 'react';
 import { MouseEvent } from 'react';
 import { Link } from 'react-router-dom';

@@ -1,5 +1,5 @@
 import { TCity, TDetailedOffer, TOffer } from '@shared/ui/mocks/type';
-import { State } from '../state/ui/store';
+import { State } from '../state/ui/state';
 import { NameSpace } from '@shared/const';
 
 export const getCurrentCity = (state: State): TCity =>
