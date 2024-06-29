@@ -1,6 +1,8 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { NameSpace } from '@shared/const';
+import { getMockReviews } from '@shared/ui/mocks/lib/getMocks';
 import { TReview } from '@shared/ui/mocks/type';
+import { reviews } from '@shared/ui/mocks/ui';
 
 type ReviewProcessType = {
   reviews: TReview[];
@@ -8,7 +10,7 @@ type ReviewProcessType = {
 };
 
 export const initialState: ReviewProcessType = {
-  reviews: [],
+  reviews: getMockReviews(reviews, 15),
   isCommentPosting: false,
 };
 

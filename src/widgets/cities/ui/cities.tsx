@@ -2,9 +2,11 @@ import { PlaceCard } from '@entities/place-card/ui';
 import { CitiesMap } from '../../cities-map/ui';
 import { OfferSort } from '@features/offer-sort/ui';
 import { placeCardType } from '@shared/const';
-import { offers } from '@shared/ui/mocks/ui';
+import { useAppSelector } from '@shared/lib/hooks/useSelector/useSelector';
+import { getOffers } from '@shared/store/offer-process';
 
 export function Cities(): JSX.Element {
+  const offers = useAppSelector(getOffers);
   return (
     <div className="cities">
       <div className="cities__places-container container">

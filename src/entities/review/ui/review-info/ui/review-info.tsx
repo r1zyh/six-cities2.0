@@ -3,12 +3,18 @@ import { ReviewText } from '../../review-text/ui';
 import { ReviewTime } from '../../review-time/ui';
 import { Layout } from './layout';
 
-export function ReviewInfo(): JSX.Element {
+type TReviewInfo = {
+  text: string;
+  date: string;
+  rating: number;
+};
+
+export function ReviewInfo({ text, date, rating }: TReviewInfo): JSX.Element {
   return (
     <Layout>
-      <ReviewRating />
-      <ReviewText />
-      <ReviewTime />
+      <ReviewRating rating={rating} />
+      <ReviewText text={text} />
+      <ReviewTime time={date} />
     </Layout>
   );
 }

@@ -4,25 +4,16 @@ import { Login } from '@pages/login/ui';
 import { Favorites } from '@pages/favorites/ui';
 import { Offer } from '@pages/offer/ui';
 import { AppRoute } from '@shared/const';
-import { useEffect } from 'react';
-import { fetchOffers } from '@shared/store/api-actions';
-import { useAppDispatch } from '@shared/lib/hooks/useDispatch/useDispatch';
 
 /*
 В будущем лучше вынести обертки из компонентов.
 Подумать над названием offer-card в entities
 Убрать временные переменные из offer-details, offer-price и offer-rating
 не забыть про const в cities-selector
-Умер сервер, подумать, что делать с взаимодействием с сервером, возможно поменять структуру Api.
+Умер сервер, убрать пока запросы через Axios, подумать как избежать дублирования кода при генерации моков, если это возможно и если это имеет смысл?
 */
 
 function Providers() {
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    dispatch(fetchOffers());
-  }, [dispatch]);
-
   return (
     <BrowserRouter>
       <Routes>

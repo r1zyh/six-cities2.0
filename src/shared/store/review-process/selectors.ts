@@ -7,3 +7,6 @@ export const getReviews = (state: State): TReview[] | null =>
 
 export const getCommentPostStatus = (state: State): boolean =>
   state[NameSpace.Reviews].isCommentPosting;
+
+export const getReviewsCount = (state: State): number | null =>
+  state[NameSpace.Reviews].reviews.length;

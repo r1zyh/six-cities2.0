@@ -1,6 +1,9 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { CITY_MAP, NameSpace, SortTypes } from '@shared/const';
+import { getMockOffers } from '@shared/ui/mocks/lib/getMocks';
 import { TCity, TDetailedOffer, TOffer } from '@shared/ui/mocks/type';
+import { offers } from '@shared/ui/mocks/ui';
+
 
 type OffersProcessType = {
   currentCity: TCity;
@@ -17,7 +20,7 @@ const initialState: OffersProcessType = {
   currentCity: CITY_MAP.Paris,
   activeId: null,
   currentSortType: SortTypes.Popular,
-  offers: [],
+  offers: getMockOffers(offers, 20),
   favoriteOffers: [],
   detailedOffer: null,
   isOffersLoading: true,

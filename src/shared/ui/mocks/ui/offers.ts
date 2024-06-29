@@ -27,7 +27,7 @@ export const offers: TOffer[] = [
   },
   {
     id: crypto.randomUUID(),
-    title: 'Beautiful & luxurious studio at great location',
+    title: 'Good studio',
     type: OfferTypes.PrivateRoom,
     price: 170,
     city: {
@@ -50,7 +50,7 @@ export const offers: TOffer[] = [
   },
   {
     id: crypto.randomUUID(),
-    title: 'Beautiful & luxurious studio at great location',
+    title: 'Very good place for family with children',
     type: OfferTypes.Apartment,
     price: 120,
     city: {

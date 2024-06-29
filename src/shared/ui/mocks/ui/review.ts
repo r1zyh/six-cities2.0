@@ -6,7 +6,7 @@ export const reviews: TReview[] = [
     date: '2019-05-08T14:13:56.569Z',
     user: {
       name: 'Bebrus',
-      avatarUrl: 'img/avatar-max.jpg',
+      avatarUrl: 'img/avatar-angelina.jpg',
       isPro: false,
     },
     comment:
@@ -30,7 +30,7 @@ export const reviews: TReview[] = [
     date: '2019-05-08T14:13:56.569Z',
     user: {
       name: 'Vova Gysev',
-      avatarUrl: 'img/avatar-max.jpg',
+      avatarUrl: 'img/avatar-angelina.jpg',
       isPro: true,
     },
     comment:
