@@ -10,10 +10,11 @@ import {
 
 type TBookmarks = {
   type: string;
+  isFavorite: boolean;
 };
 
-export function BookmarksBtn({ type }: TBookmarks): JSX.Element {
-  const [isFav, setIsFav] = useState(false);
+export function BookmarksBtn({ type, isFavorite }: TBookmarks): JSX.Element {
+  const [isFav, setIsFav] = useState(isFavorite);
 
   const handleFavClick = (e: MouseEvent) => {
     e.preventDefault();

@@ -14,7 +14,7 @@ type TPlaceCard = {
 
 export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
 
-  const { id, title, price, type, rating, isPremium, previewImage, } = offer;
+  const { id, title, price, type, rating, isPremium, previewImage, isFavorite } = offer;
 
   return cardType === placeCardType ? (
     <article className="cities__card place-card" id={id}>
@@ -23,7 +23,7 @@ export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
       <div className="place-card__info">
         <div className="place-card__price-wrapper">
           <CardPrice type={placeCardType} price={price} />
-          <BookmarksBtn type={placeCardType} />
+          <BookmarksBtn type={placeCardType} isFavorite={isFavorite} />
         </div>
         <CardRating type={placeCardType} rating={rating} />
         <PlaceCardInfo title={title} type={type} />
@@ -36,7 +36,7 @@ export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
       <div className="favorites__card-info place-card__info">
         <div className="place-card__price-wrapper">
           <CardPrice type={placeCardType} price={price} />
-          <BookmarksBtn type={placeCardType} />
+          <BookmarksBtn type={placeCardType} isFavorite={isFavorite} />
         </div>
         <CardRating type={placeCardType} rating={rating} />
         <PlaceCardInfo title={title} type={type} />
