@@ -25,7 +25,7 @@ export const offers: TDetailedOffer[] = [
     isPremium: false,
     rating: 4,
     previewImage: 'img/apartment-02.jpg',
-    description: lorem.generateSentences(2),
+    description: lorem.generateSentences(3),
     bedrooms: 2,
     goods: [
       'Wi-Fi',
@@ -74,7 +74,7 @@ export const offers: TDetailedOffer[] = [
     isPremium: true,
     rating: 4,
     previewImage: 'img/apartment-03.jpg',
-    description: lorem.generateSentences(3),
+    description: lorem.generateSentences(6),
     bedrooms: 2,
     goods: [
       'Wi-Fi',
@@ -122,7 +122,7 @@ export const offers: TDetailedOffer[] = [
     isPremium: false,
     rating: 4,
     previewImage: 'img/apartment-01.jpg',
-    description: lorem.generateSentences(2),
+    description: lorem.generateSentences(5),
     bedrooms: 1,
     goods: [
       'Wi-Fi',
@@ -170,7 +170,7 @@ export const offers: TDetailedOffer[] = [
     isPremium: true,
     rating: 4,
     previewImage: 'img/apartment-03.jpg',
-    description: lorem.generateSentences(1),
+    description: lorem.generateSentences(4),
     bedrooms: 3,
     goods: [
       'Washing machine',

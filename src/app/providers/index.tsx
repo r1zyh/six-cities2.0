@@ -6,13 +6,13 @@ import { Offer } from '@pages/offer/ui';
 import { AppRoute } from '@shared/const';
 
 /*
-В будущем лучше вынести обертки из компонентов.
 Подумать над названием offer-card в entities
-Убрать временные переменные из offer-details, offer-price и offer-rating
 не забыть про const в cities-selector
-Умер сервер, убрать пока запросы через Axios, подумать как избежать дублирования кода при генерации моков, если это возможно и если это имеет смысл?
+Подумать как избежать дублирования кода при генерации моков, если это возможно и если это имеет смысл?
 Добавить переход на конкретную карточку товара при помощи useParams и setActiveId
 Подключить Map
+Перенести папку типов mock в пампу types
+Исправить сброс состояния при обновлении страницы Offer, скорее всего useEffect
 */
 
 function Providers() {
@@ -22,7 +22,7 @@ function Providers() {
         <Route path={AppRoute.Main} element={<Main />}></Route>
         <Route path={AppRoute.Login} element={<Login />}></Route>
         <Route path={AppRoute.Favorites} element={<Favorites />}></Route>
-        <Route path={AppRoute.Offer} element={<Offer />}></Route>
+        <Route path={`${AppRoute.Offer}/:id`} element={<Offer />}></Route>
       </Routes>
     </BrowserRouter>
   );

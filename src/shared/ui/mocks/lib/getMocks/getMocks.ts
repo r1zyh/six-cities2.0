@@ -130,7 +130,7 @@ export const getMockOffers = (baseOffers: TDetailedOffer[], count: number) => {
       isFavorite: Math.random() > 0.5,
       isPremium: Math.random() > 0.5,
       rating: baseItem.rating + getRandomInt(-5, 5),
-      description: lorem.generateSentences(2),
+      description: lorem.generateSentences(4),
       bedrooms: getRandomInt(1, 5),
       goods: getRandomGoods(),
       host: {

@@ -1,5 +1,9 @@
 import { CardPrice } from '@shared/ui/card-price/ui';
 
-export function OfferPrice(): JSX.Element {
-  return <CardPrice price={120} />;
+type TOfferPrice = {
+  price: number;
+};
+
+export function OfferPrice({ price }: TOfferPrice): JSX.Element {
+  return <CardPrice price={price} />;
 }
