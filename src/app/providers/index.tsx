@@ -11,6 +11,8 @@ import { AppRoute } from '@shared/const';
 Убрать временные переменные из offer-details, offer-price и offer-rating
 не забыть про const в cities-selector
 Умер сервер, убрать пока запросы через Axios, подумать как избежать дублирования кода при генерации моков, если это возможно и если это имеет смысл?
+Добавить переход на конкретную карточку товара при помощи useParams и setActiveId
+Подключить Map
 */
 
 function Providers() {

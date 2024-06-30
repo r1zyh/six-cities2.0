@@ -1,7 +1,7 @@
 import { AxiosInstance } from 'axios';
 import { AppDispatch, State } from '../state/ui/state';
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { TOffer } from '@shared/ui/mocks/type';
+import { TDetailedOffer } from '@shared/ui/mocks/type';
 import { setOffers, setOffersLoadingStatus } from '@shared/store/offer-process';
 import { APIRoute } from '@shared/const';
 
@@ -16,7 +16,8 @@ export const fetchOffers = createAsyncThunk<void, undefined, thunkObjType>(
   async (_arg, { dispatch, extra: api }) => {
     try {
       dispatch(setOffersLoadingStatus(true));
-      const { data } = await api.get<TOffer[]>(APIRoute.Offers);
+      const { data } = await api.get<TDetailedOffer[]>(APIRoute.Offers);
+      // При работе с сервером был тип TOffer, но так как он не работает для исправление lint ошибки будет так
       dispatch(setOffersLoadingStatus(false));
       dispatch(setOffers(data));
     } catch {

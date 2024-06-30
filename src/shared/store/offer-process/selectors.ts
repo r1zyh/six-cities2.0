@@ -1,4 +1,4 @@
-import { TCity, TDetailedOffer, TOffer } from '@shared/ui/mocks/type';
+import { TCity, TDetailedOffer } from '@shared/ui/mocks/type';
 import { State } from '../state/ui/state';
 import { NameSpace } from '@shared/const';
 
@@ -8,11 +8,11 @@ export const getActiveId = (state: State): string | null =>
   state[NameSpace.Offers].activeId;
 export const getCurrentSortType = (state: State): string =>
   state[NameSpace.Offers].currentSortType;
-export const getOffers = (state: State): TOffer[] =>
+export const getOffers = (state: State): TDetailedOffer[] =>
   state[NameSpace.Offers].offers;
-export const getDetailedOffer = (state: State): TDetailedOffer | null =>
-  state[NameSpace.Offers].detailedOffer;
-export const getFavOffers = (state: State): TOffer[] =>
+/* export const getDetailedOffer = (state: State): TDetailedOffer | null =>
+  state[NameSpace.Offers].detailedOffer; */
+export const getFavOffers = (state: State): TDetailedOffer[] =>
   state[NameSpace.Offers].favoriteOffers;
 export const getOffersLoadingStatus = (state: State): boolean =>
   state[NameSpace.Offers].isOffersLoading;

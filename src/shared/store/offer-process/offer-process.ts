@@ -1,17 +1,16 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { CITY_MAP, NameSpace, SortTypes } from '@shared/const';
 import { getMockOffers } from '@shared/ui/mocks/lib/getMocks';
-import { TCity, TDetailedOffer, TOffer } from '@shared/ui/mocks/type';
+import { TCity, TDetailedOffer } from '@shared/ui/mocks/type';
 import { offers } from '@shared/ui/mocks/ui';
-
 
 type OffersProcessType = {
   currentCity: TCity;
   activeId: string | null;
   currentSortType: string;
-  offers: TOffer[];
-  favoriteOffers: TOffer[];
-  detailedOffer: TDetailedOffer | null;
+  offers: TDetailedOffer[];
+  favoriteOffers: TDetailedOffer[];
+  // detailedOffer: TDetailedOffer | null;
   isOffersLoading: boolean;
   isFavOffersLoading: boolean;
 };
@@ -22,7 +21,7 @@ const initialState: OffersProcessType = {
   currentSortType: SortTypes.Popular,
   offers: getMockOffers(offers, 20),
   favoriteOffers: [],
-  detailedOffer: null,
+  //detailedOffer: null,
   isOffersLoading: true,
   isFavOffersLoading: true,
 };
@@ -40,10 +39,10 @@ export const offersProcessSlice = createSlice({
     setPlacesSortType: (state, action: PayloadAction<string>) => {
       state.currentSortType = action.payload;
     },
-    setOffers: (state, action: PayloadAction<TOffer[]>) => {
+    setOffers: (state, action: PayloadAction<TDetailedOffer[]>) => {
       state.offers = action.payload;
     },
-    updateOffers: (state, action: PayloadAction<TOffer>) => {
+    updateOffers: (state, action: PayloadAction<TDetailedOffer>) => {
       const updatedOffer = action.payload;
       const index = state.offers.findIndex(
         (offer) => offer.id === updatedOffer.id
@@ -55,26 +54,26 @@ export const offersProcessSlice = createSlice({
         state.offers.push(updatedOffer);
       }
     },
-    setDetailedOffer: (state, action: PayloadAction<TDetailedOffer | null>) => {
+    /*   setDetailedOffer: (state, action: PayloadAction<TDetailedOffer | null>) => {
       state.detailedOffer = action.payload;
     },
     updateDetailedOfferStatus: (state, action: PayloadAction<boolean>) => {
       if (state.detailedOffer) {
         state.detailedOffer.isFavorite = action.payload;
       }
-    },
+    }, */
     setOffersLoadingStatus: (state, action: PayloadAction<boolean>) => {
       state.isOffersLoading = action.payload;
     },
-    setFavoriteOffers: (state, action: PayloadAction<TOffer[]>) => {
+    setFavoriteOffers: (state, action: PayloadAction<TDetailedOffer[]>) => {
       state.favoriteOffers = action.payload;
     },
-    removeFavoriteOffers: (state, action: PayloadAction<TOffer>) => {
+    removeFavoriteOffers: (state, action: PayloadAction<TDetailedOffer>) => {
       state.favoriteOffers = state.favoriteOffers.filter(
         (offer) => offer.id !== action.payload.id
       );
     },
-    addFavoriteOffers: (state, action: PayloadAction<TOffer>) => {
+    addFavoriteOffers: (state, action: PayloadAction<TDetailedOffer>) => {
       state.favoriteOffers = [...state.favoriteOffers, action.payload];
     },
     setFavoriteOffersLoadingStatus: (state, action: PayloadAction<boolean>) => {
@@ -88,12 +87,12 @@ export const {
   setActiveId,
   setPlacesSortType,
   setOffers,
-  setDetailedOffer,
+  // setDetailedOffer,
   setOffersLoadingStatus,
   removeFavoriteOffers,
   addFavoriteOffers,
   setFavoriteOffers,
   setFavoriteOffersLoadingStatus,
-  updateDetailedOfferStatus,
+  // updateDetailedOfferStatus,
   updateOffers,
 } = offersProcessSlice.actions;

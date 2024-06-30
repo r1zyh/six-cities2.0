@@ -13,7 +13,7 @@ type TLocation = {
   zoom: number;
 };
 
-type THost = {
+export type THost = {
   name: string;
   avatarUrl: string;
   isPro: boolean;
@@ -42,6 +42,7 @@ export type TDetailedOffer = {
   isFavorite: boolean;
   isPremium: boolean;
   rating: number;
+  previewImage: string;
   description: string;
   bedrooms: number;
   goods: string[];

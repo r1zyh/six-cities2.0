@@ -5,11 +5,11 @@ import { CardRating } from '@shared/ui/card-rating/ui';
 import { CardImage } from '@shared/ui/card-image/ui';
 import { PlaceCardInfo } from '../../place-card-info/ui';
 import { placeCardType } from '@shared/const';
-import { TOffer } from '@shared/ui/mocks/type';
+import { TDetailedOffer } from '@shared/ui/mocks/type';
 
 type TPlaceCard = {
   cardType?: string;
-  offer: TOffer;
+  offer: TDetailedOffer;
 };
 
 export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
@@ -19,7 +19,7 @@ export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
   return cardType === placeCardType ? (
     <article className="cities__card place-card" id={id}>
       <Mark type={placeCardType} isPremium={isPremium} />
-      <CardImage type={placeCardType} previewImage={previewImage} />
+      <CardImage type={placeCardType} id={id} previewImage={previewImage} />
       <div className="place-card__info">
         <div className="place-card__price-wrapper">
           <CardPrice type={placeCardType} price={price} />
@@ -32,7 +32,7 @@ export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
   ) : (
     <article className="favorites__card place-card" id={id}>
       <Mark type={placeCardType} isPremium={isPremium} />
-      <CardImage previewImage={previewImage} />
+      <CardImage id={id} previewImage={previewImage} />
       <div className="favorites__card-info place-card__info">
         <div className="place-card__price-wrapper">
           <CardPrice type={placeCardType} price={price} />

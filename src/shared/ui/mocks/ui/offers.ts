@@ -1,7 +1,8 @@
 import { OfferTypes } from '@shared/const';
-import { TOffer } from '../type';
+import { TDetailedOffer } from '../type';
+import { lorem } from '../lib/getMocks';
 
-export const offers: TOffer[] = [
+export const offers: TDetailedOffer[] = [
   {
     id: crypto.randomUUID(),
     title: 'Beautiful & luxurious studio at great location',
@@ -24,6 +25,32 @@ export const offers: TOffer[] = [
     isPremium: false,
     rating: 4,
     previewImage: 'img/apartment-02.jpg',
+    description: lorem.generateSentences(2),
+    bedrooms: 2,
+    goods: [
+      'Wi-Fi',
+      'Washing machine',
+      'Towels',
+      'Heating',
+      'Coffee machine',
+      'Dishwasher',
+      'Cabel TV',
+      'Fridge',
+    ],
+    host: {
+      name: 'Anastasia',
+      avatarUrl: 'img/avatar-angelina.jpg',
+      isPro: true,
+    },
+    images: [
+      'apartment-01.jpg',
+      'apartment-02.jpg',
+      'apartment-03.jpg',
+      'room.jpg',
+      'studio-01.jpg',
+      'apartment-01.jpg',
+    ],
+    maxAdults: 4,
   },
   {
     id: crypto.randomUUID(),
@@ -47,6 +74,31 @@ export const offers: TOffer[] = [
     isPremium: true,
     rating: 4,
     previewImage: 'img/apartment-03.jpg',
+    description: lorem.generateSentences(3),
+    bedrooms: 2,
+    goods: [
+      'Wi-Fi',
+      'Washing machine',
+      'Towels',
+      'Kitchen',
+      'Dishwasher',
+      'Cabel TV',
+      'Fridge',
+    ],
+    host: {
+      name: 'Vova Gysev',
+      avatarUrl: 'img/avatar-max.jpg',
+      isPro: false,
+    },
+    images: [
+      'studio-01.jpg',
+      'apartment-02.jpg',
+      'apartment-01.jpg',
+      'room.jpg',
+      'apartment-03.jpg',
+      'apartment-01.jpg',
+    ],
+    maxAdults: 3,
   },
   {
     id: crypto.randomUUID(),
@@ -70,6 +122,31 @@ export const offers: TOffer[] = [
     isPremium: false,
     rating: 4,
     previewImage: 'img/apartment-01.jpg',
+    description: lorem.generateSentences(2),
+    bedrooms: 1,
+    goods: [
+      'Wi-Fi',
+      'Towels',
+      'Heating',
+      'Coffee machine',
+      'Baby seat',
+      'Kitchen',
+      'Fridge',
+    ],
+    host: {
+      name: 'Rita',
+      avatarUrl: 'img/avatar-angelina.jpg',
+      isPro: false,
+    },
+    images: [
+      'room.jpg',
+      'apartment-01.jpg',
+      'studio-01.jpg',
+      'apartment-03.jpg',
+      'apartment-01.jpg',
+      'apartment-02.jpg',
+    ],
+    maxAdults: 2,
   },
   {
     id: crypto.randomUUID(),
@@ -93,5 +170,30 @@ export const offers: TOffer[] = [
     isPremium: true,
     rating: 4,
     previewImage: 'img/apartment-03.jpg',
+    description: lorem.generateSentences(1),
+    bedrooms: 3,
+    goods: [
+      'Washing machine',
+      'Towels',
+      'Heating',
+      'Coffee machine',
+      'Kitchen',
+      'Dishwasher',
+      'Cabel TV',
+    ],
+    host: {
+      name: 'Giga Morj',
+      avatarUrl: 'img/avatar-max.jpg',
+      isPro: true,
+    },
+    images: [
+      'apartment-03.jpg',
+      'apartment-02.jpg',
+      'studio-01.jpg',
+      'apartment-01.jpg',
+      'room.jpg',
+      'apartment-01.jpg',
+    ],
+    maxAdults: 5,
   },
 ];
