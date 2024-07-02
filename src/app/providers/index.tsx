@@ -13,6 +13,7 @@ import { AppRoute } from '@shared/const';
 Подключить Map
 Перенести папку типов mock в пампу types
 Исправить сброс состояния при обновлении страницы Offer, скорее всего useEffect
+На страничке favorites отрисовать массив favorites, реализовать логику добавления в favorites
 */
 
 function Providers() {
