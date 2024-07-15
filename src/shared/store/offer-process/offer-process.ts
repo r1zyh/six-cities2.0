@@ -3,7 +3,6 @@ import { CITY_MAP, NameSpace, SortTypes } from '@shared/const';
 import offers from '@shared/data/mock-offers.json';
 import { TCity, TDetailedOffer } from '@shared/types';
 
-
 type OffersProcessType = {
   currentCity: TCity;
   activeId: string | null;

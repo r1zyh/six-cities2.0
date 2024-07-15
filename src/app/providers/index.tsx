@@ -8,12 +8,9 @@ import { AppRoute } from '@shared/const';
 /*
 Подумать над названием offer-card в entities
 не забыть про const в cities-selector
-Подумать как избежать дублирования кода при генерации моков, если это возможно и если это имеет смысл?
-Добавить переход на конкретную карточку товара при помощи useParams и setActiveId
 Подключить Map
-Перенести папку типов mock в пампу types
-Исправить сброс состояния при обновлении страницы Offer, скорее всего useEffect
 На страничке favorites отрисовать массив favorites, реализовать логику добавления в favorites
+Так же добавить моки для favorites,
 */
 
 function Providers() {
