@@ -5,7 +5,7 @@ import { CardRating } from '@shared/ui/card-rating/ui';
 import { CardImage } from '@shared/ui/card-image/ui';
 import { PlaceCardInfo } from '../../place-card-info/ui';
 import { placeCardType } from '@shared/const';
-import { TDetailedOffer } from '@shared/ui/mocks/type';
+import { TDetailedOffer } from '@shared/types';
 
 type TPlaceCard = {
   cardType?: string;

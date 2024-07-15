@@ -7,7 +7,7 @@ import { OfferPrice } from '../../offer-price/ui';
 import { OfferRating } from '../../offer-rating/ui';
 import { offerType } from '@shared/const';
 import { Reviews } from '@widgets/reviews/ui';
-import { TDetailedOffer } from '@shared/ui/mocks/type';
+import { TDetailedOffer } from '@shared/types';
 
 type TOfferDetails = {
   detailedOffer: TDetailedOffer;

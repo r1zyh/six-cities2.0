@@ -1,15 +1,14 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { NameSpace } from '@shared/const';
-import { getMockOffers } from '@shared/ui/mocks/lib/getMocks';
-import { TDetailedOffer } from '@shared/ui/mocks/type';
-import { offers } from '@shared/ui/mocks/ui';
+import { TDetailedOffer } from '@shared/types';
+import offers from '@shared/data/mock-offers.json';
 
 type NearbyOffersProcessType = {
   nearbyOffers: TDetailedOffer[];
 };
 
 const initialState: NearbyOffersProcessType = {
-  nearbyOffers: getMockOffers(offers, 8),
+  nearbyOffers: offers,
 };
 
 export const nearbyOffersProcessSlice = createSlice({

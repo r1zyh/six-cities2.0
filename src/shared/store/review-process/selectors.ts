@@ -1,4 +1,4 @@
-import { TReview } from '@shared/ui/mocks/type';
+import { TReview } from '@shared/types';
 import { State } from '../state/ui/state';
 import { NameSpace } from '@shared/const';
 

@@ -1,4 +1,4 @@
-import { TReview } from '@shared/ui/mocks/type';
+import { TReview } from '@shared/types';
 import { ReviewInfo } from './review-info/ui';
 
 type TRev = {

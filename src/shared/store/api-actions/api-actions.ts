@@ -1,7 +1,7 @@
 import { AxiosInstance } from 'axios';
 import { AppDispatch, State } from '../state/ui/state';
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { TDetailedOffer } from '@shared/ui/mocks/type';
+import { TDetailedOffer } from '@shared/types';
 import { setOffers, setOffersLoadingStatus } from '@shared/store/offer-process';
 import { APIRoute } from '@shared/const';
 

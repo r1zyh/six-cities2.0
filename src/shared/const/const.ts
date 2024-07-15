@@ -1,4 +1,4 @@
-import { TCity } from '@shared/ui/mocks/type';
+import { TCity } from '@shared/types';
 
 export const offerType = 'offer';
 export const placeCardType = 'place-card' as string; // найти зачем было приведение типа

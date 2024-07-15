@@ -1,4 +1,4 @@
-import { TDetailedOffer } from '@shared/ui/mocks/type';
+import { TDetailedOffer } from '@shared/types';
 import { NameSpace } from '@shared/const';
 import { State } from '../state/ui/state';
 

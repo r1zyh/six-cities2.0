@@ -1,4 +1,4 @@
-import { THost } from '@shared/ui/mocks/type';
+import { THost } from '@shared/types';
 
 type TOfferHost = {
   host: THost;
