@@ -11,6 +11,7 @@ import { AppRoute } from '@shared/const';
 Подключить Map
 На страничке favorites отрисовать массив favorites, реализовать логику добавления в favorites
 Так же добавить моки для favorites,
+test
 */
 
 function Providers() {
