@@ -8,7 +8,7 @@
         "isPro": false
       },
       "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
+      "rating": 5
     },
     {
       "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e4wq3",
@@ -19,7 +19,7 @@
         "isPro": true
       },
       "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
+      "rating": 3
     },
     {
       "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e2",
@@ -52,40 +52,7 @@
         "isPro": false
       },
       "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
-    },
-    {
-      "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e3kju3hkh2",
-      "date": "2019-05-08T14:13:56.569Z",
-      "user": {
-        "name": "Emilia Shchelkunova",
-        "avatarUrl": "img/avatar-max.jpg",
-        "isPro": false
-      },
-      "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
-    },
-    {
-      "id": "d85853b8-2e72-4c9b-bb41-f031190ca02exx3c3zc233",
-      "date": "2019-05-08T14:13:56.569Z",
-      "user": {
-        "name": "Emilia Shchelkunova",
-        "avatarUrl": "img/avatar-max.jpg",
-        "isPro": false
-      },
-      "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
-    },
-    {
-      "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e12ty5",
-      "date": "2019-05-08T14:13:56.569Z",
-      "user": {
-        "name": "Emilia Shchelkunova",
-        "avatarUrl": "img/avatar-max.jpg",
-        "isPro": false
-      },
-      "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
+      "rating": 2
     },
     {
       "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e1cvh",
@@ -96,7 +63,7 @@
         "isPro": false
       },
       "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
+      "rating": 2
     },
     {
       "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e4zqc333",
@@ -107,7 +74,7 @@
         "isPro": true
       },
       "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
+      "rating": 5
     },
     {
       "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e234ccc",
@@ -118,7 +85,7 @@
         "isPro": true
       },
       "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
+      "rating": 5
     },
     {
       "id": "d85853b8-2e72-4c9b-bb41-f031190ca02eg2131nmx3",
@@ -129,51 +96,7 @@
         "isPro": false
       },
       "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
-    },
-    {
-      "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e312234",
-      "date": "2019-05-08T14:13:56.569Z",
-      "user": {
-        "name": "Emilia Shchelkunova",
-        "avatarUrl": "img/avatar-max.jpg",
-        "isPro": false
-      },
-      "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
-    },
-    {
-      "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e32",
-      "date": "2019-05-08T14:13:56.569Z",
-      "user": {
-        "name": "Emilia Shchelkunova",
-        "avatarUrl": "img/avatar-max.jpg",
-        "isPro": false
-      },
-      "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
-    },
-    {
-      "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e33",
-      "date": "2019-05-08T14:13:56.569Z",
-      "user": {
-        "name": "Emilia Shchelkunova",
-        "avatarUrl": "img/avatar-max.jpg",
-        "isPro": false
-      },
-      "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
-    },
-    {
-      "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e12nnb55",
-      "date": "2019-05-08T14:13:56.569Z",
-      "user": {
-        "name": "Emilia Shchelkunova",
-        "avatarUrl": "img/avatar-max.jpg",
-        "isPro": false
-      },
-      "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
+      "rating": 5
     },
     {
         "id": "d85853b8-2e72-4c9b-bb41-f031190ca02eo1",
@@ -206,7 +129,7 @@
           "isPro": true
         },
         "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
+        "rating": 3
       },
       {
         "id": "d85853b8-2e72-4c9b-bb41-f031190ca02eo3",
@@ -217,51 +140,7 @@
           "isPro": false
         },
         "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
-      },
-      {
-        "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e3o1",
-        "date": "2019-05-08T14:13:56.569Z",
-        "user": {
-          "name": "Emilia Shchelkunova",
-          "avatarUrl": "img/avatar-max.jpg",
-          "isPro": false
-        },
-        "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
-      },
-      {
-        "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e3j2",
-        "date": "2019-05-08T14:13:56.569Z",
-        "user": {
-          "name": "Emilia Shchelkunova",
-          "avatarUrl": "img/avatar-max.jpg",
-          "isPro": false
-        },
-        "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
-      },
-      {
-        "id": "d85853b8-2e72-4c9b-bb41-f031190ca02je33",
-        "date": "2019-05-08T14:13:56.569Z",
-        "user": {
-          "name": "Emilia Shchelkunova",
-          "avatarUrl": "img/avatar-max.jpg",
-          "isPro": false
-        },
-        "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
-      },
-      {
-        "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e1z299i",
-        "date": "2019-05-08T14:13:56.569Z",
-        "user": {
-          "name": "Emilia Shchelkunova",
-          "avatarUrl": "img/avatar-max.jpg",
-          "isPro": false
-        },
-        "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
+        "rating": 3
       },
       {
       "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e1ggf123",
@@ -272,7 +151,7 @@
         "isPro": false
       },
       "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
+      "rating": 3
     },
     {
       "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e4",
@@ -283,7 +162,7 @@
         "isPro": true
       },
       "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
+      "rating": 1
     },
     {
       "id": "d85853b8-2e72-4c9b-bb41-f031190ca02ezx2",
@@ -305,51 +184,7 @@
         "isPro": false
       },
       "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
-    },
-    {
-      "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e3e1",
-      "date": "2019-05-08T14:13:56.569Z",
-      "user": {
-        "name": "Emilia Shchelkunova",
-        "avatarUrl": "img/avatar-max.jpg",
-        "isPro": false
-      },
-      "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
-    },
-    {
-      "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e3w2",
-      "date": "2019-05-08T14:13:56.569Z",
-      "user": {
-        "name": "Emilia Shchelkunova",
-        "avatarUrl": "img/avatar-max.jpg",
-        "isPro": false
-      },
-      "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
-    },
-    {
-      "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e3z3",
-      "date": "2019-05-08T14:13:56.569Z",
-      "user": {
-        "name": "Emilia Shchelkunova",
-        "avatarUrl": "img/avatar-max.jpg",
-        "isPro": false
-      },
-      "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
-    },
-    {
-      "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e1266qe",
-      "date": "2019-05-08T14:13:56.569Z",
-      "user": {
-        "name": "Emilia Shchelkunova",
-        "avatarUrl": "img/avatar-max.jpg",
-        "isPro": false
-      },
-      "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-      "rating": 4
+      "rating": 2
     },
     {
         "id": "d85853b8-2e72-4c9b-bb41-f031190ca02eaa1",
@@ -371,7 +206,7 @@
           "isPro": true
         },
         "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
+        "rating": 2
       },
       {
         "id": "d85853b8-2e72-4c9b-bb41-f031190ca02es2",
@@ -380,61 +215,6 @@
           "name": "Vova Gysev",
           "avatarUrl": "img/avatar-angelina.jpg",
           "isPro": true
-        },
-        "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
-      },
-      {
-        "id": "d85853b8-2e72-4c9b-bb41-f031190ca02ffe3",
-        "date": "2019-05-08T14:13:56.569Z",
-        "user": {
-          "name": "Emilia Shchelkunova",
-          "avatarUrl": "img/avatar-max.jpg",
-          "isPro": false
-        },
-        "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
-      },
-      {
-        "id": "d85853b8-2e72-4c9b-bb41-f031190ca02eyy31",
-        "date": "2019-05-08T14:13:56.569Z",
-        "user": {
-          "name": "Emilia Shchelkunova",
-          "avatarUrl": "img/avatar-max.jpg",
-          "isPro": false
-        },
-        "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
-      },
-      {
-        "id": "d85853b8-2e72-4c9b-bb41-f031190ca02be32",
-        "date": "2019-05-08T14:13:56.569Z",
-        "user": {
-          "name": "Emilia Shchelkunova",
-          "avatarUrl": "img/avatar-max.jpg",
-          "isPro": false
-        },
-        "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
-      },
-      {
-        "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e3bb3",
-        "date": "2019-05-08T14:13:56.569Z",
-        "user": {
-          "name": "Emilia Shchelkunova",
-          "avatarUrl": "img/avatar-max.jpg",
-          "isPro": false
-        },
-        "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
-        "rating": 4
-      },
-      {
-        "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e1vvv2",
-        "date": "2019-05-08T14:13:56.569Z",
-        "user": {
-          "name": "Emilia Shchelkunova",
-          "avatarUrl": "img/avatar-max.jpg",
-          "isPro": false
         },
         "comment": "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.",
         "rating": 4

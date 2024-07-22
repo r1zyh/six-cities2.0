@@ -1,1 +1,1 @@
-export * from './review-form';
+export { ReviewForm } from './form';

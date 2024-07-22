@@ -8,7 +8,7 @@ type NearbyOffersProcessType = {
 };
 
 const initialState: NearbyOffersProcessType = {
-  nearbyOffers: offers,
+  nearbyOffers: offers.slice(0, 10),
 };
 
 export const nearbyOffersProcessSlice = createSlice({
