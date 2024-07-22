@@ -13,10 +13,10 @@ export const getOffers = (state: State): TDetailedOffer[] =>
 /* export const getDetailedOffer = (state: State): TDetailedOffer | null =>
   state[NameSpace.Offers].detailedOffer; */
 export const getFavOffers = (state: State): TDetailedOffer[] =>
-  state[NameSpace.Offers].favoriteOffers;
+  state[NameSpace.Offers].offers.filter((offer) => offer.isFavorite);
 export const getOffersLoadingStatus = (state: State): boolean =>
   state[NameSpace.Offers].isOffersLoading;
 export const getFavoriteOffersCount = (state: State): number =>
-  state[NameSpace.Offers].favoriteOffers.length;
+  state[NameSpace.Offers].offers.filter((offer) => offer.isFavorite).length;
 export const getFavoriteOffersLoadingStatus = (state: State): boolean =>
   state[NameSpace.Offers].isFavOffersLoading;

@@ -4,6 +4,7 @@ import { PlaceCard } from '@entities/place-card/ui';
 import { useAppSelector } from '@shared/lib/hooks/useSelector/useSelector';
 import { getFavOffers } from '@shared/store/offer-process';
 
+
 export function FavoritesList(): JSX.Element {
   const favOffers = useAppSelector(getFavOffers);
   return (
