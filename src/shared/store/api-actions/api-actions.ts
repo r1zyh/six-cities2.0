@@ -5,6 +5,11 @@ import { TDetailedOffer } from '@shared/types';
 import { setOffers, setOffersLoadingStatus } from '@shared/store/offer-process';
 import { APIRoute } from '@shared/const';
 
+/*
+Логика запросов на сервер не работает так как сервер перестал существовать.
+В будущем тут будет либо какой-то паблик Api или свой
+*/
+
 type thunkObjType = {
   dispatch: AppDispatch;
   state: State;

@@ -6,15 +6,29 @@ import { CardImage } from '@shared/ui/card-image/ui';
 import { PlaceCardInfo } from '../../place-card-info/ui';
 import { placeCardType } from '@shared/const';
 import { TDetailedOffer } from '@shared/types';
-
+//import { useState } from 'react';
+/*import { useAppSelector } from '@shared/lib/hooks/useSelector/useSelector';
+import { getAuthStatus } from '@shared/store/user-process/selectors';
+*/
 type TPlaceCard = {
   cardType?: string;
   offer: TDetailedOffer;
 };
 
 export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
+  //const authStatus = useAppSelector(getAuthStatus);
+  const {
+    id,
+    title,
+    price,
+    type,
+    rating,
+    isPremium,
+    previewImage,
+    isFavorite,
+  } = offer;
 
-  const { id, title, price, type, rating, isPremium, previewImage, isFavorite } = offer;
+  //const [isFav, setIsFav] = useState(isFavorite);
 
   return cardType === placeCardType ? (
     <article className="cities__card place-card" id={id}>

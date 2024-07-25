@@ -2,7 +2,7 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { CITY_MAP, NameSpace, SortTypes } from '@shared/const';
 import offers from '@shared/data/mock-offers.json';
 import { TCity, TDetailedOffer } from '@shared/types';
-import favorites from '@shared/data/mock-favorites.json';
+import { getFavorite } from '@shared/lib/favorite-helpers/get-favorites';
 
 type OffersProcessType = {
   currentCity: TCity;
@@ -20,7 +20,7 @@ const initialState: OffersProcessType = {
   activeId: null,
   currentSortType: SortTypes.Popular,
   offers: offers,
-  favoriteOffers: favorites,
+  favoriteOffers: getFavorite(),
   //detailedOffer: null,
   isOffersLoading: true,
   isFavOffersLoading: true,

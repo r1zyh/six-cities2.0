@@ -9,9 +9,12 @@ import { AppRoute } from '@shared/const';
 Подумать над названием offer-card в entities
 не забыть про const в cities-selector
 Подключить Map
-На страничке favorites отрисовать массив favorites, реализовать логику добавления в favorites
-Так же добавить моки для favorites,
-Доделать слетевший review-form
+Доделать добавление в favorites
+Подключить hook useFavChange в place-card
+Так же стоит допилить проверку аутентификации в userProcess
+Добавить карту
+Добавить логику выбора города
+Добавить логику добавления комментария
 */
 
 function Providers() {
