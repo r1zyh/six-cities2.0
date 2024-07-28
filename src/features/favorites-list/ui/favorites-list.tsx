@@ -13,7 +13,7 @@ export function FavoritesList(): JSX.Element {
         <Location type={favoriteType} />
         <div className="favorites__places">
           {favOffers.map((offer) => (
-            <PlaceCard offer={offer} key={offer.id} />
+            <PlaceCard offer={offer} key={`${offer.id}-fav`} />
           ))}
         </div>
       </li>

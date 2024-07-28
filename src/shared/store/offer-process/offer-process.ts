@@ -72,9 +72,34 @@ export const offersProcessSlice = createSlice({
       state.favoriteOffers = state.favoriteOffers.filter(
         (offer) => offer.id !== action.payload.id
       );
+
+      const offerIndex = state.offers.findIndex(
+        (offer) => offer.id === action.payload.id
+      );
+      if (offerIndex !== -1) {
+        state.offers[offerIndex].isFavorite = false;
+        state.offers[offerIndex] = {
+          ...state.offers[offerIndex],
+          isFavorite: false,
+        };
+      }
     },
     addFavoriteOffers: (state, action: PayloadAction<TDetailedOffer>) => {
-      state.favoriteOffers = [...state.favoriteOffers, action.payload];
+      state.favoriteOffers = [
+        ...state.favoriteOffers,
+        action.payload,
+      ];
+
+      const offerIndex = state.offers.findIndex(
+        (offer) => offer.id === action.payload.id
+      );
+      if (offerIndex !== -1) {
+        state.offers[offerIndex].isFavorite = true;
+        state.offers[offerIndex] = {
+          ...state.offers[offerIndex],
+          isFavorite: true,
+        };
+      }
     },
     setFavoriteOffersLoadingStatus: (state, action: PayloadAction<boolean>) => {
       state.isFavOffersLoading = action.payload;

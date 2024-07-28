@@ -7,18 +7,31 @@ import {
   offerCardWidth,
   offerCardHeight,
 } from '../const';
+import { favStatusChange } from '@shared/lib/favorite-helpers/favorite-status-change';
+import { useAppDispatch } from '@shared/lib/hooks/useDispatch/useDispatch';
+import { useAppSelector } from '@shared/lib/hooks/useSelector/useSelector';
+import { getOffers } from '@shared/store/offer-process';
 
 type TBookmarks = {
   type: string;
   isFavorite: boolean;
+  id: string;
 };
 
-export function BookmarksBtn({ type, isFavorite }: TBookmarks): JSX.Element {
+export function BookmarksBtn({
+  type,
+  isFavorite,
+  id,
+}: TBookmarks): JSX.Element {
+  const dispatch = useAppDispatch();
+  const offers = useAppSelector(getOffers);
   const [isFav, setIsFav] = useState(isFavorite);
 
   const handleFavClick = (e: MouseEvent) => {
     e.preventDefault();
     setIsFav((prev) => !prev);
+
+    favStatusChange({ status: isFav ? 0 : 1, id, offers, dispatch });
   };
 
   return type === 'place-card' ? (

@@ -1,23 +1,26 @@
-import { TDetailedOffer } from '@shared/types';
-import { useAppDispatch } from '../useDispatch/useDispatch';
 import {
   addFavoriteOffers,
   removeFavoriteOffers,
   updateOffers,
 } from '@shared/store/offer-process';
+import { AppDispatch } from '@shared/store/state/ui/state';
+import { TDetailedOffer } from '@shared/types';
 
 type TUseFavStatusChange = {
   status: number;
-  offers: TDetailedOffer[];
   id: string;
+  offers: TDetailedOffer[];
+  dispatch: AppDispatch;
 };
 
-export const useFavStatusChange = ({
+//вынести отсюда
+
+export const favStatusChange = ({
   status,
-  offers,
   id,
+  offers,
+  dispatch,
 }: TUseFavStatusChange) => {
-  const dispatch = useAppDispatch();
   const getCurrentOffer = () => {
     if (!offers && id) {
       return;
@@ -31,10 +34,15 @@ export const useFavStatusChange = ({
     return;
   }
 
+  const updatedOffer = {
+    ...offer,
+    isFavorite: status !== 0,
+  };
+
   if (status === 0) {
-    dispatch(removeFavoriteOffers(offer));
+    dispatch(removeFavoriteOffers(updatedOffer));
   } else {
-    dispatch(addFavoriteOffers(offer));
+    dispatch(addFavoriteOffers(updatedOffer));
   }
-  dispatch(updateOffers(offer));
+  dispatch(updateOffers(updatedOffer));
 };

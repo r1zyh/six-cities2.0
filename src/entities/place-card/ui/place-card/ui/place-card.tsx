@@ -6,7 +6,6 @@ import { CardImage } from '@shared/ui/card-image/ui';
 import { PlaceCardInfo } from '../../place-card-info/ui';
 import { placeCardType } from '@shared/const';
 import { TDetailedOffer } from '@shared/types';
-//import { useState } from 'react';
 /*import { useAppSelector } from '@shared/lib/hooks/useSelector/useSelector';
 import { getAuthStatus } from '@shared/store/user-process/selectors';
 */
@@ -14,6 +13,7 @@ type TPlaceCard = {
   cardType?: string;
   offer: TDetailedOffer;
 };
+//При выходе с favorite обратно в main вылетает ошибка про повторяющиеся key
 
 export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
   //const authStatus = useAppSelector(getAuthStatus);
@@ -28,7 +28,6 @@ export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
     isFavorite,
   } = offer;
 
-  //const [isFav, setIsFav] = useState(isFavorite);
 
   return cardType === placeCardType ? (
     <article className="cities__card place-card" id={id}>
@@ -37,7 +36,7 @@ export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
       <div className="place-card__info">
         <div className="place-card__price-wrapper">
           <CardPrice type={placeCardType} price={price} />
-          <BookmarksBtn type={placeCardType} isFavorite={isFavorite} />
+          <BookmarksBtn type={placeCardType} isFavorite={isFavorite} id={id}/>
         </div>
         <CardRating type={placeCardType} rating={rating} />
         <PlaceCardInfo title={title} type={type} />
