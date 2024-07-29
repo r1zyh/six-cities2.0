@@ -11,6 +11,7 @@ import { favStatusChange } from '@shared/lib/favorite-helpers/favorite-status-ch
 import { useAppDispatch } from '@shared/lib/hooks/useDispatch/useDispatch';
 import { useAppSelector } from '@shared/lib/hooks/useSelector/useSelector';
 import { getOffers } from '@shared/store/offer-process';
+import { placeCardType } from '@shared/const';
 
 type TBookmarks = {
   type: string;
@@ -34,7 +35,7 @@ export function BookmarksBtn({
     favStatusChange({ status: isFav ? 0 : 1, id, offers, dispatch });
   };
 
-  return type === 'place-card' ? (
+  return type === placeCardType ? (
     <button
       className={classNames({
         'place-card__bookmark-button button': !isFav,

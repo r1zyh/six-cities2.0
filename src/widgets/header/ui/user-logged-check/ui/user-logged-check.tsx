@@ -1,5 +1,6 @@
 import { AppRoute, AuthorizationStatus } from '@shared/const';
 import { useAppSelector } from '@shared/lib/hooks/useSelector/useSelector';
+import { redirectToRoute } from '@shared/store/actions/actions';
 import { getFavoriteOffersCount } from '@shared/store/offer-process';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -10,6 +11,7 @@ export function UserLoggedCheck(): JSX.Element {
 
   const logOutAction = () => {
     setAuthStatus(AuthorizationStatus.NoAuth);
+    redirectToRoute(AppRoute.Login);
   };
   return authStatus === AuthorizationStatus.Auth ? (
     <nav className="header__nav">
@@ -28,7 +30,9 @@ export function UserLoggedCheck(): JSX.Element {
         </li>
         <li className="header__nav-item">
           <a className="header__nav-link" href="#">
-            <span className="header__signout" onClick={logOutAction}>Sign out</span>
+            <span className="header__signout" onClick={logOutAction}>
+              Sign out
+            </span>
           </a>
         </li>
       </ul>

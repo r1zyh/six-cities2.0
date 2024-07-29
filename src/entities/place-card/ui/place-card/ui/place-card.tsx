@@ -49,7 +49,7 @@ export function PlaceCard({ cardType, offer }: TPlaceCard): JSX.Element {
       <div className="favorites__card-info place-card__info">
         <div className="place-card__price-wrapper">
           <CardPrice type={placeCardType} price={price} />
-          <BookmarksBtn type={placeCardType} isFavorite={isFavorite} />
+          <BookmarksBtn type={placeCardType} isFavorite={isFavorite} id={id}/>
         </div>
         <CardRating type={placeCardType} rating={rating} />
         <PlaceCardInfo title={title} type={type} />
